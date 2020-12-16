@@ -53,3 +53,5 @@ const numbersPlusSevenLong = numbersArray.map(function(number) {
   return number + 7
 })
 console.log(numbersPlusSevenLong)
+
+
