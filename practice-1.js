@@ -54,4 +54,52 @@ const numbersPlusSevenLong = numbersArray.map(function(number) {
 })
 console.log(numbersPlusSevenLong)
 
+console.log("=================================================================5.")
+const fs = require('fs');
+const os = require('os');
 
+const system = os.platform();
+const user = os.userInfo().username;
+
+fs.appendFile('hello.txt', `Hello ${user} on ${system}!`, (err) => {
+  if (err) throw err;
+  console.log('The data was appended to file!');//print this word
+});
+//use of concat, ..., splice and push
+console.log("=================================================================6.")
+function countdown(n){
+  return n < 1 ? [] : [n].concat(countdown(n - 1));
+}
+const num = countdown(10)
+console.log(num)//[10,9,8,7,6,5,4,3,2,1]
+
+console.log("=================================================================6.1")
+function countdown(n){
+  return n < 1 ? [] : [n, ...countdown(n - 1)];
+}
+const num1 = countdown(10)
+console.log(num1)//[10,9,8,7,6,5,4,3,2,1]
+
+console.log("=================================================================6.2")
+function countdown(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const arr = countdown(n - 1);
+    arr.splice(0, 0, n);
+    return arr;
+  }
+}const num2 = countdown(10)
+console.log(num2)//[10,9,8,7,6,5,4,3,2,1]
+
+console.log("=================================================================6.3")
+function countup(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countup(n - 1);
+    countArray.push(n);
+    return countArray;
+  }
+}
+console.log(countup(5)); // [ 1, 2, 3, 4, 5 ]

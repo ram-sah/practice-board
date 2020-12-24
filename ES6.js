@@ -20,3 +20,16 @@ function getFood1(food) {
 }
 const retFood = getFood1(false)
 console.log(retFood)//cracker
+
+console.log("=====================================================1")
+
+function add(x, y) {
+    console.log(x + y);
+  }
+  add(2, 4)
+
+//or ternary operator
+
+const add1 = (x, y) => console.log(x + y);
+  
+  add1(2, 4)
