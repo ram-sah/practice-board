@@ -130,3 +130,11 @@ arra1concat = arra1.concat(arra2)
 arra1 = [...arra1, ...arra2]
 console.log(arra1concat)//[2,3,4,5,6,7]
 console.log(arra1)//[2,3,4,5,6,7]
+
+console.log("===========================17.")
+const sumArg = (...args) => {
+return args.reduce((a, b) => a + b, 0);
+}
+console.log(sumArg(2,3,4,1))//10
+
+console.log("===========================18.")
