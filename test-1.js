@@ -46,9 +46,62 @@ const anagramCheck = (starString, moonString) => {
 };
 console.log(anagramCheck('listen', 'silent'));
 
+console.log("========5.====================================================");
+function createPhoneNumber(numbers){
+    var formatter= "(xxx) xxx-xxxx"
+     for(var i=0; i<numbers.length; i++){
+           formatter= formatter.replace("x", numbers[i])
+      }
+      return formatter
+      
+}
+var numPrt = createPhoneNumber(5655755567);
+console.log(numPrt)
 
-console.log("========4.====================================================");
+console.log("========6.=ask bcs==============================================");
 
+function getFunc() {
+    var a = 7;
+    return function(b) {
+        console.log(a+b);
+    }
+}
+var f = getFunc();
+f(5);//12
+
+ console.log("========================================================7.=====")   
+
+ var trees = ["pine","apple","oak","maple","cherry"];
+delete trees[3];
+console.log(trees.length);//5
+
+console.log("========================================================8.=====") 
+var p = ("10" +11 + 20)
+console.log(p)//101120
+
+console.log("========================================================9.=====") 
+var ar = [2, 2, 2, 2, 2, 4, 5, 5, 5, 9];
+function fooo(ar) {
+  var a = [], 
+      b = [], prev ;
+
+  ar.sort();
+  for (var i = 0; i < ar.length; i++) {
+    if (ar[i] !== prev) {
+      a.push(ar[i]);
+      b.push(1);
+    } else {
+      b[b.length - 1]++;
+    }
+    prev = ar[i];
+  }
+  return [a, b];
+}
+
+var result = fooo(ar);
+console.log('[' + result[0] + ']','[' + result[1] + ']')
+
+console.log("========10.====================================================");
 function letterCount(s) {
     let arr = s.split("").sort()
     let obj = {}
@@ -60,41 +113,5 @@ function letterCount(s) {
     return obj
 
 }
-
-
-console.log("========5.====================================================");
-function createPhoneNumber(numbers){
-    var formatter= "(xxx) xxx-xxxx"
-     for(var i=0; i<numbers.length; i++){
-           formatter= formatter.replace("x", numbers[i])
-      }
-      return formatter
-      
-}
-
-
-console.log("========6.=ask bcs===================================================");
-
-function getFunc() {
-    var a = 7;
-    return function(b) {
-        console.log(a+b);
-    }
-}
-var f = getFunc();
-f(5);//12
-
-// useEffect(() => {
-//     setName("John");
-//     }, [name]);
-  
- console.log("========================================================7.=====")   
-
- var trees = ["pine","apple","oak","maple","cherry"];
-delete trees[3];
-console.log(trees.length);//5
-
-console.log("========================================================8.=====") 
-var p = ("10" +11 + 20)
-console.log(p)//101120
-console.log("========================================================9.=====") 
+var ltrcont = letterCount("565757");
+console.log(ltrcont);
