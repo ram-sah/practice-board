@@ -32,7 +32,6 @@ function romanConverter(num) {
 }
 console.log(romanConverter(38))
 
-
 console.log("========3.====================================================");
 const anagramCheck = (starString, moonString) => {
     const normalize = aString => 
@@ -101,7 +100,7 @@ function fooo(ar) {
 var result = fooo(ar);
 console.log('[' + result[0] + ']','[' + result[1] + ']')
 
-console.log("========10.====================================================");
+console.log("=======================================================10.=====");
 function letterCount(s) {
     let arr = s.split("").sort()
     let obj = {}
@@ -115,3 +114,42 @@ function letterCount(s) {
 }
 var ltrcont = letterCount("565757");
 console.log(ltrcont);
+
+console.log("=======================================================11.=====");
+
+let num = 2.754
+console.log(num.toFixed())//3 don't forget () after toFixed()
+
+let myWords = ["red", "green","purple"]
+myWords.splice(1, 1)
+
+console.log(myWords)//removed green
+myWords.push("yellow")
+
+let pets = [
+{name: "meooww", species: "cat", age: 6},
+{name: "bhooo", species: "dog", age: 4},
+{name: "baaaoa", species: "cow", age: 8},
+{name: "hauhau", species: "dog", age: 7},
+]
+  console.log("====================map")
+  let petTest= pets.map(myPets)
+  function myPets(x){
+    return x.name;
+  }
+  console.log( petTest)
+  
+  console.log("====================filter")
+  let dogs = pets.filter(onlyDog)
+  function onlyDog(x){
+  return x.species == "dog"  
+  }
+  console.log(dogs)
+  
+  console.log("====================filter only babyDog")
+  
+  let babyDog = pets.filter(onlyDog).filter(onlyBabyDog).map(myPets)
+  function onlyBabyDog(x){
+    return x.age <5
+  }
+  console.log(babyDog)
