@@ -170,6 +170,7 @@ function reverse1(string) {
   }
   return new_string;
 }
+
 //version 2 using built in string/array methods
 function reverse2(string) {
   let string_array = string.split("");
