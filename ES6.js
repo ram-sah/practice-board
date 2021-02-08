@@ -38,6 +38,14 @@ function subtract(x, y) {
     console.log(x - y);
 }
 subtract(14, 4)
-
+//or ternary operator
 const subt = (x, y)=> console.log(x - y);
 subt(16, 6)
+
+function multiply(x, y) {
+    console.log(x * y)
+}
+multiply(4, 5)
+//or ternary operator
+const multi = (x, y) => console.log(x * y)
+multi(10, 2)
