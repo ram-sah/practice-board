@@ -33,3 +33,11 @@ function add(x, y) {
 const add1 = (x, y) => console.log(x + y);
   
   add1(2, 4)
+
+function subtract(x, y) {
+    console.log(x - y);
+}
+subtract(14, 4)
+
+const subt = (x, y)=> console.log(x - y);
+subt(16, 6)
