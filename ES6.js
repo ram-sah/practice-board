@@ -49,3 +49,12 @@ multiply(4, 5)
 //or ternary operator
 const multi = (x, y) => console.log(x * y)
 multi(10, 2)
+
+
+function divid(x, y) {
+    console.log(x * y)
+}
+divid(4, 5)
+//or ternary operator
+const division = (x, y) => console.log(x / y)
+division(10, 2)
