@@ -50,7 +50,6 @@ multiply(4, 5)
 const multi = (x, y) => console.log(x * y)
 multi(10, 2)
 
-
 function divid(x, y) {
     console.log(x * y)
 }

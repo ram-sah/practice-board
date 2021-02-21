@@ -112,14 +112,14 @@ console.log("=================================================================7"
 // an alert box with the index of the array and the value
 
 var stuff = [10,34,56,67,93,120,137,168,259,280,311,342,413,514];
-var random_value = stuff[ Math.floor( Math.random() * 14 ) ];
+var randomValue = stuff[ Math.floor( Math.random() * 14 ) ];
 var i;
 for (i = 0; i < stuff.length; i++) {
-  if (random_value == stuff[i]) {
+  if (randomValue == stuff[i]) {
       console.log("The random value matches a number in 'stuff' at position " + [i + 1])
   } else {
     console.log("no matches found")
   }
 };
 console.log("stuff : " + stuff);
-console.log(random_value + " is the random number");
+console.log(randomValue + " is the random number");
