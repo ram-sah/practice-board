@@ -103,3 +103,23 @@ function countup(n) {
   }
 }
 console.log(countup(5)); // [ 1, 2, 3, 4, 5 ]
+
+console.log("=================================================================7")
+
+
+// Write a for loop that looks at each index of the array to see if it 
+// matches the random value If it does match the random value display 
+// an alert box with the index of the array and the value
+
+var stuff = [10,34,56,67,93,120,137,168,259,280,311,342,413,514];
+var random_value = stuff[ Math.floor( Math.random() * 14 ) ];
+var i;
+for (i = 0; i < stuff.length; i++) {
+  if (random_value == stuff[i]) {
+      console.log("The random value matches a number in 'stuff' at position " + [i + 1])
+  } else {
+    console.log("no matches found")
+  }
+};
+console.log("stuff : " + stuff);
+console.log(random_value + " is the random number");
