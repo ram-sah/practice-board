@@ -30,18 +30,18 @@ function findMinNum(arr){
 //======================================================================
 
 
-//   var twoSum = function(nums, target) {
-//     for (let i = 0; i < nums.length; i++) {
-//         const comp = target - nums[i];
-//         if (nums.indexOf(comp) !== -1 && nums.indexOf(comp) !== i) {
-//             return [i, nums.indexOf(comp)];
-//         }
-//     }
-//     return 'No complement';
-// };
-// console.log(twoSum([2,7,11,15],9))
+  var twoSum1 = function(nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        const comp = target - nums[i];
+        if (nums.indexOf(comp) !== -1 && nums.indexOf(comp) !== i) {
+            return [i, nums.indexOf(comp)];
+        }
+    }
+    return 'No complement';
+};
+console.log(twoSum1([2,7,11,15],9))
 
-//or
+//or==================================
 
 var twoSum = function(nums, target) {
   for (var i=0; i<nums.length; i++) {
