@@ -247,16 +247,3 @@ function removeFirstTwo(list) {
 const arr = removeFirstTwo(source);
 console.log(arr); // should be [3,4,5,6,7,8,9,10]
 console.log(source); // should be [1,2,3,4,5,6,7,8,9,10];
-
-//================================
-
-
-var twoSum = function(nums, target) {
-  for (var i=0; i<nums.length; i++) {
-      if (nums.slice(i+1,).indexOf(target - nums[i]) > -1){
-        
-          return [i, i+1+nums.slice(i+1,).indexOf(target - nums[i])];
-          }
-    }
-  }
-  console.log(twoSum([2,7,11,15], 18))

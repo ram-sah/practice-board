@@ -29,7 +29,6 @@ function findMinNum(arr){
 // Output: Because nums[0] + nums[1] == 9, we return [0, 1].
 //======================================================================
 
-
   var twoSum1 = function(nums, target) {
     for (let i = 0; i < nums.length; i++) {
         const comp = target - nums[i];
