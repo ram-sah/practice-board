@@ -52,23 +52,4 @@ var twoSum = function(nums, target) {
   }
   console.log(twoSum([2,7,11,15], 18))
 
-  //===============================
-// Use template literal syntax with backticks to create an array of list element (li) strings. 
-//Each list element's text should be one of the array elements from the failure property on 
-//the result object and have a class attribute with the value text-warning. 
-//The makeList function should return the array of list item strings.
-
-  const result = {
-    success: ["max-length", "no-amd", "prefer-arrow-functions"],
-    failure: ["no-var", "var-on-top", "linebreak"],
-    skipped: ["no-extra-semi", "no-dup-keys"]
-  };
-  function makeList(arr) {
-    "use strict";
-    //
-    const failureItems = arr.map(item => `<li class="text-warning">${item}</li>`);
-    // 
-    return failureItems;
-  }
-  const failuresList = makeList(result.failure);
   
