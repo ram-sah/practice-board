@@ -208,3 +208,4 @@ function makeList(arr) {
   return failureItems;
 }
 const failuresList = makeList(result.failure);
+console.log(failuresList)
