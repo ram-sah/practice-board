@@ -225,3 +225,14 @@ function makeList(arr) {
   return failureItems;
 }
 const failuresList = makeList(result.failure);
+
+//Refactor the function setGear inside the object 
+//bicycle to use the shorthand syntax described .
+
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    "use strict";
+    this.gear = newGear;
+  }
+};
