@@ -278,3 +278,14 @@ let pets = [
     return x.age <5
   }
   console.log(babyDog)
+
+
+  console.log("Refactor the function setGear inside the object bicycle to use the shorthand syntax.")
+
+  const bicycle = {
+    gear: 2,
+    setGear(newGear) {
+      "use strict";
+      this.gear = newGear;
+    }
+  };
